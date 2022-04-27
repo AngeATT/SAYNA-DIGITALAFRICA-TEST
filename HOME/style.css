@@ -3,6 +3,11 @@
     font-family: 'Far From Homecoming';
     src: url("../Far-From\ Homecoming\ Updated.otf") format("opentype");
 }
+
+
+
+
+
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -13,10 +18,18 @@ body {
     width: 100vw;
 }
 
-h1 {
+h2{
+    font-size: 4vw;
+}
+
+h1,h2 {
     font-family: 'Far From Homecoming', sans-serif;
-    font-size: 32px;
+font-size: 4vw;
     color: #FFFFFF;
+    font-weight: lighter;
+}
+#section1 h1 {
+    font-size: 6vw;   
 }
 
 /* Css du haut de la page*/
@@ -68,10 +81,7 @@ h1 {
     
 }
 
-#section1 h1 {
-    font-size: 70px;
-    font-weight: lighter;
-}
+
 
 .bouton1,
 #contenu-section2 button {
@@ -103,6 +113,7 @@ h1 {
     padding-right: 8%;
     margin-bottom: 70px;
 }
+
 
 #section2 img {
     width: auto;
