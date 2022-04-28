@@ -3,41 +3,91 @@
     font-family: 'Far From Homecoming';
     src: url("../Far-From\ Homecoming\ Updated.otf") format("opentype");
 }
-@media screen and (min-width: 750px){
-    #section1-contenu p{
+
+@media screen and (min-width: 750px) {
+    #section1-contenu p {
         font-size: 25px;
     }
-}
-@media screen and (max-width: 750px) {
-nav{
-    height: 0px;
-}
-nav a{
-    display: none;
-}
-#nav{
-    padding-top: 10px;
-}
-.logos{
-    
-    padding: 0px;
-}
-.logos img {
-    display: flex;
-    max-width: 120px;
-    height: 40px;
-}
-#section1-contenu h1{
-    order: -1;
-}
-#section1-contenu p{
-    order: 0;
-}
-#section1-contenu div{
-    order: 1;
+    #section3{
+        justify-content: right;
+        background-size: contain;
+        padding-top: 5%;
+    }
+    .cases input{
+        width: 250px;
+    }
+    h2 {
+        font-size: 2.5vw;
+    }
 }
 
-*{
+@media screen and (max-width: 750px) {
+
+    #les-3-spidermans {
+        text-align: center;
+    }
+
+    nav {
+        height: 0px;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    #nav {
+        padding-top: 10px;
+    }
+
+    .logos {
+
+        padding: 0px;
+    }
+
+    .logos img {
+        display: flex;
+        max-width: 120px;
+        height: 40px;
+    }
+
+    #section1-contenu h1 {
+        order: -1;
+    }
+    
+
+    #section1-contenu p {
+        order: 0;
+    }
+
+    #section1-contenu div {
+        order: 1;
+    }
+
+    #span1{
+        order: 0;
+    }
+    #span2{
+        order: -1;
+    }
+    #section3{
+        justify-content: center;
+        background-size: cover;
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    #section3 p{
+        text-align: center;
+        width: 70vw;
+    }
+    #section3 button{
+        
+    }
+    .cases input{
+        width: 70vw;
+    }
+}
+
+* {
     box-sizing: border-box;
     margin: 0px;
 }
@@ -46,17 +96,17 @@ body {
     background-color: #b11313;
 }
 
-h2{
-    font-size: 4vw;
-}
 
-h1,h2 {
+
+h1,
+h2 {
     font-family: 'Far From Homecoming', sans-serif;
     color: #FFFFFF;
     font-weight: lighter;
 }
+
 #section1 h1 {
-    font-size: 5vw;   
+    font-size: 4vw;
 }
 
 /* Css du haut de la page*/
@@ -101,15 +151,17 @@ h1,h2 {
     background-position: right;
     background-size: cover;
     color: #FFFFFF;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     display: grid;
     grid-template-rows: repeat(3, 18vw);
 }
-#section1-contenu{
+
+#section1-contenu {
     grid-row: 2;
     margin-left: 10%;
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
 
@@ -141,6 +193,7 @@ h1,h2 {
 }
 
 #section2 {
+
     padding-top: 100px;
     padding-left: 8%;
     padding-right: 8%;
@@ -156,11 +209,11 @@ h1,h2 {
 }
 
 #contenu-section2 {
-    justify-content: space-around;
     color: #ffffffb2;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: space-between;
 
 }
 
@@ -175,11 +228,15 @@ h1,h2 {
 
 }
 
+
 #contenu-section2 ul {
     margin: 0px;
 }
 
-#contenu-section2 p {
+#contenu-section2 p,
+#section2 p {
+
+    padding: 2% 0%;
     margin: 0px;
 }
 
@@ -192,14 +249,13 @@ h1,h2 {
 }
 
 #section3 {
+    
     display: flex;
     background-image: url(./images_home/img5.png);
     background-repeat: no-repeat;
     background-origin: border-box;
     background-color: #114c92;
-    background-size: contain;
     align-items: center;
-    justify-content: right;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -210,7 +266,7 @@ h1,h2 {
 
 
 
-.formulaire{
+.formulaire {
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
@@ -230,7 +286,6 @@ h1,h2 {
 }
 
 .cases input {
-    width: 250px;
     height: auto;
     border-radius: 20px;
     margin-top: 9px;
@@ -275,7 +330,7 @@ h1,h2 {
     display: flex;
     flex-direction: column;
     padding-top: 35px;
-    
+
 
 }
 
@@ -312,16 +367,17 @@ h1,h2 {
 
 }
 
-#footer{
+#footer {
     background-color: #000000;
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 30px;
-    
-    
+
+
 
 }
-#footer1{
+
+#footer1 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -329,20 +385,24 @@ h1,h2 {
     align-items: center;
     flex-wrap: wrap;
 }
-#footer1 .logos{
+
+#footer1 .logos {
     margin-left: 0px;
     gap: 4px;
 }
-#footer1 .logos img{
+
+#footer1 .logos img {
     max-width: 100px;
     max-height: 40px;
 
 }
+
 #footer a {
-color  : #FFFFFF;
-text-decoration : none;
+    color: #FFFFFF;
+    text-decoration: none;
 }
-#footer-langue{
+
+#footer-langue {
     background-color: #b11313;
     color: #FFFFFF;
     padding: 3px;
@@ -350,19 +410,23 @@ text-decoration : none;
     border-radius: 12px;
     border-width: 0px;
 }
-#footer2{
+
+#footer2 {
     display: flex;
     justify-content: center;
     gap: 5px;
     padding: 40px;
 }
-#footer2 img{
+
+#footer2 img {
     background-color: #bd1b1b;
     gap: 10px;
     border-radius: 12px;
     padding: 2px;
 }
-footer{display: flex;
+
+footer {
+    display: flex;
     color: #FFFFFF;
     justify-content: center;
     align-items: center;
@@ -370,6 +434,4 @@ footer{display: flex;
     padding-right: 10%;
     padding-bottom: 20px;
     background-color: #000000
-
 }
-
