@@ -3,10 +3,39 @@
     font-family: 'Far From Homecoming';
     src: url("../Far-From\ Homecoming\ Updated.otf") format("opentype");
 }
-
-
-
-
+@media screen and (min-width: 750px){
+    #section1-contenu p{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 750px) {
+nav{
+    height: 0px;
+}
+nav a{
+    display: none;
+}
+#nav{
+    padding-top: 10px;
+}
+.logos{
+    
+    padding: 0px;
+}
+.logos img {
+    display: flex;
+    max-width: 120px;
+    height: 40px;
+}
+#section1-contenu h1{
+    order: -1;
+}
+#section1-contenu p{
+    order: 0;
+}
+#section1-contenu div{
+    order: 1;
+}
 
 *{
     box-sizing: border-box;
@@ -15,7 +44,6 @@
 
 body {
     background-color: #b11313;
-    width: 100vw;
 }
 
 h2{
@@ -24,12 +52,11 @@ h2{
 
 h1,h2 {
     font-family: 'Far From Homecoming', sans-serif;
-font-size: 4vw;
     color: #FFFFFF;
     font-weight: lighter;
 }
 #section1 h1 {
-    font-size: 6vw;   
+    font-size: 5vw;   
 }
 
 /* Css du haut de la page*/
@@ -74,20 +101,25 @@ font-size: 4vw;
     background-position: right;
     background-size: cover;
     color: #FFFFFF;
-    padding-top: 20%;
-    padding-left: 10%;
-    background-repeat: no-repeat;
-    padding-bottom: 200px;
-    
+    background-repeat: no-repeat; 
+    display: grid;
+    grid-template-rows: repeat(3, 18vw);
 }
+#section1-contenu{
+    grid-row: 2;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 
 .bouton1,
 #contenu-section2 button {
-    border-radius: 8px;
+    border-radius: 18px;
     padding: 12px;
-    width: 150px;
+    width: 145px;
     background-color: none;
     border: 0px;
     margin-right: 12px;
@@ -96,9 +128,9 @@ font-size: 4vw;
 }
 
 #bouton2 {
-    border-radius: 10px;
+    border-radius: 18px;
     padding: 12px;
-    width: 150px;
+    width: 145px;
     background-color: transparent;
     border-color: white;
     margin-right: 12px;
@@ -109,6 +141,7 @@ font-size: 4vw;
 }
 
 #section2 {
+    padding-top: 100px;
     padding-left: 8%;
     padding-right: 8%;
     margin-bottom: 70px;
