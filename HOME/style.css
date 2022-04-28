@@ -19,6 +19,13 @@
     h2 {
         font-size: 2.5vw;
     }
+    #newsletter{
+        background-position: 120% 0px;
+        padding-bottom: 200px;
+    }
+    #contenu-section2{
+        justify-content: space-between;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -69,6 +76,10 @@
     #span2{
         order: -1;
     }
+    #contenu-section2{
+        justify-content: center;
+    }
+
     #section3{
         justify-content: center;
         background-size: cover;
@@ -83,6 +94,18 @@
         
     }
     .cases input{
+        width: 70vw;
+    }
+    #newsletter{
+        background-position: right bottom;
+    }
+    .formulaire2{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    
+    .formulaire2 h2 p{
+        text-align: center;
         width: 70vw;
     }
 }
@@ -213,8 +236,6 @@ h2 {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    justify-content: space-between;
-
 }
 
 #section2 span {
@@ -314,10 +335,9 @@ h2 {
     background-size: contain;
     color: #FFFFFF;
     background-repeat: no-repeat;
-    padding-bottom: 200px;
+    
     padding-left: 10%;
     padding-right: 10%;
-    background-position: 120% 0px;
 
 }
 
