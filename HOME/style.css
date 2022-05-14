@@ -26,6 +26,14 @@
     #contenu-section2{
         justify-content: space-between;
     }
+    #footer1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 30px;
+        align-items: center;
+        flex-wrap: wrap;}
+
 }
 
 @media screen and (max-width: 750px) {
@@ -107,6 +115,24 @@
     .formulaire2 h2 p{
         text-align: center;
         width: 70vw;
+    }
+    #contenu-footer{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #footer1 {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around ;
+        height: 30px;
+        align-items: flex-start;
+    }
+    #footer1 a{
+        order: -1;
+    }
+    .logos {
+        align-self: flex-end;
     }
 }
 
@@ -399,11 +425,9 @@ h2 {
 
 #footer1 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content:space-around ;
     height: 30px;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
 #footer1 .logos {
